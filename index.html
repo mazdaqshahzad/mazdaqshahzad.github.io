@@ -13,8 +13,8 @@
     
     <link rel="shortcut icon" href="favicon.ico">  
     
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Modern Fonts for Developer Portfolio -->
+    <link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
     
     <!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
@@ -22,16 +22,8 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
     
-  
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    
-
-    <style>
-        .company-title{
-            color:blue !important;
-        }
-    </style>
 </head> 
 
 <body>
@@ -39,22 +31,23 @@
     <header class="header">
         <div class="container">     
 	        <div class="row align-items-center">
-			    <div class="col">         
-		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.jpg" alt="profile image" 
-                    width="150" height="150"/>
-		            <div class="profile-content">
+			    <div class="col-12 col-md-auto text-center text-md-start mb-3 mb-md-0">         
+		            <img class="profile-image img-fluid rounded-circle mx-auto mx-md-0 d-block" src="assets/images/profile.jpg" alt="Mazdaq Shahzad - Senior Software Engineer profile image"/>
+			    </div><!--//col-->
+			    <div class="col-12 col-md">
+		            <div class="profile-content text-center text-md-start">
 		                <h1 class="name">Mazdaq Shahzad</h1>
 		                <h2 class="desc">Senior Software Engineer @ S&P Global</h2>   
-		                <ul class="social list-inline">		               
-		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/mazdaq-shahzad/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/mazdaqshahzad" target="_blank"><i class="fab fa-github-alt"></i></a></li>    
-		                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/9304396/mazdaq" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>   
+		                <ul class="social list-inline justify-content-center justify-content-md-start mb-0">		               
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/mazdaq-shahzad/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/mazdaqshahzad" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/9304396/mazdaq" target="_blank" aria-label="Stack Overflow Profile"><i class="fab fa-stack-overflow"></i></a></li>   
 		                           
 		                </ul> 
 		            </div><!--//profile-->
 			    </div><!--//col-->
-	            <div class="col-12 col-md-auto">
-		            <div class="dark-mode-switch d-flex">
+	            <div class="col-12 col-md-auto text-center">
+		            <div class="dark-mode-switch d-flex justify-content-center">
 						<div class="form-check form-switch mx-auto mx-md-0">
 							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
 							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
@@ -72,7 +65,9 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I am a Full Stack Developer with 6 years of experience specializing in .NET/.NET Core, Angular, and NodeJS. My responsibilities include actively participating in requirement gathering, designing technical solutions to solve business challenges, writing efficient and maintainable code for new features, and conducting comprehensive code reviews to ensure quality and adherence to best practices.</p>
+                            <p>I am a <span class="text-highlight">Full Stack Developer</span> with <strong>6+ years</strong> of experience specializing in <code>.NET/.NET Core</code>, <code>Angular</code>, and <code>NodeJS</code>. My expertise spans the entire software development lifecycle - from <span class="text-highlight">requirement gathering</span> and <span class="text-highlight">system architecture</span> to writing <strong>efficient, maintainable code</strong> and conducting comprehensive <span class="text-highlight">code reviews</span>.</p>
+                            
+                            <p>I thrive in <strong>collaborative environments</strong>, working closely with cross-functional teams to deliver high-quality software solutions that solve complex business challenges. My approach combines technical excellence with strong problem-solving skills to build scalable, robust applications.</p>
                          
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
@@ -84,31 +79,27 @@
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Senior Software Engineer - <span class="place"><a href="https://www.spglobal.com/en" target="_blank" class="company-title">S&P Global</a></span> <span class="year">(October 2023 - Present)</span></h3>
-                                <p>At S&P Global, I worked on enhancing and maintaining the Screener application, specifically for Canadian Insurance features, and supported existing Market Intelligence modules. I also introduced Kibana logging in .NET applications to improve monitoring and reduce technical debt, and provided hands-on support during releases..</p>
+                                <h3 class="title">Senior Software Engineer - <span class="place"><a href="https://www.spglobal.com/en" target="_blank">S&P Global</a></span> <span class="year">(October 2023 - Present)</span></h3>
+                                <p>Enhanced and maintained the <strong>Screener application</strong> for Canadian Insurance features, while supporting existing Market Intelligence modules. Introduced <code>Kibana logging</code> in .NET applications to improve monitoring capabilities and reduce technical debt. Provided hands-on support during critical releases to ensure smooth deployments.</p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title">Senior Software Engineer - <span class="place"><a href="https://www.id-ware.com/en/home.html" target="_blank" class="company-title">IDWare</a></span> <span class="year">(July 2023 - September 2023)</span></h3>
-                                <p>I focused on maintaining and optimizing the Access Management Web Application to ensure seamless, secure user experiences. My role involved fixing bugs, enhancing performance, and addressing any technical issues to keep the platform running smoothly.</p>
+                                <h3 class="title">Senior Software Engineer - <span class="place"><a href="https://www.id-ware.com/en/home.html" target="_blank">IDWare</a></span> <span class="year">(July 2023 - September 2023)</span></h3>
+                                <p>Focused on maintaining and optimizing the <strong>Access Management Web Application</strong> to ensure seamless, secure user experiences. Implemented performance improvements and resolved critical bugs to maintain platform stability and security standards.</p>
                             </div><!--//item-->
                             
                             <div class="item">
-                                <h3 class="title">Senior Software Engineer - <span class="place"><a href="https://netsoltech.com/" target="_blank" class="company-title">Netsol Technologies</a></span> <span class="year">(September 2021 - July 2023)</span></h3>
-                                <p>As a Senior Software Engineer at NETSOL Technologies, I played a key role in shaping and enhancing the NFS Ascent Product. My work spanned requirement gathering, planning, and estimating new features, alongside maintaining and refining existing modules. Collaborating closely with the Architect Team, I contributed to improving our in-house frameworks and spearheaded initiatives within NETSOL's AI and ML projects. Additionally, I supported cross-functional teams by providing technical guidance, and I developed custom utilities and CronJobs to streamline and automate tasks, boosting efficiency and reducing manual efforts. This experience deepened my expertise in delivering high-impact, reliable software solutions.</p>
+                                <h3 class="title">Senior Software Engineer - <span class="place"><a href="https://netsoltech.com/" target="_blank">Netsol Technologies</a></span> <span class="year">(September 2021 - July 2023)</span></h3>
+                                <p>Played a key role in enhancing the <strong>NFS Ascent Product</strong>, from requirement gathering and planning to feature development. Collaborated with the <code>Architecture Team</code> to improve in-house frameworks and led initiatives in <span class="text-highlight">AI/ML projects</span>. Developed custom utilities and <code>CronJobs</code> to automate tasks, significantly boosting efficiency and reducing manual intervention.</p>
                             </div><!--//item-->
 
-
-                                
                             <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="https://panacealogics.com/" target="_blank" class="company-title">Panacea Logics</a></span> <span class="year">(February 2019 - September 2021)</span></h3>
-                                <p>At Panacea Logics, I led projects in an Agile environment, contributing to sprint planning and effort estimation. My primary tech stack included .NET Core MVC, with additional experience in Node.js and Python. I collaborated with clients and product owners to refine requirements and ensure timely delivery. Key projects included MissionControl (for farm monitoring with IoT sensor integration), Chamberofcommerce.com (support for a major U.S. business portal), and Expeedio.com.au (an Australian freight management platform). For each, I developed features, handled deployments, and built a rule engine to create custom monitoring rules, automating critical alerts and actions.</p>
+                                <h3 class="title">Software Engineer - <span class="place"><a href="https://panacealogics.com/" target="_blank">Panacea Logics</a></span> <span class="year">(February 2019 - September 2021)</span></h3>
+                                <p>Led projects in an <strong>Agile environment</strong> using <code>.NET Core MVC</code>, <code>Node.js</code>, and <code>Python</code>. Key projects included <span class="text-highlight">MissionControl</span> (IoT sensor integration for farm monitoring), <span class="text-highlight">Chamberofcommerce.com</span> (major U.S. business portal support), and <span class="text-highlight">Expeedio.com.au</span> (Australian freight management). Built a custom <strong>rule engine</strong> for automated monitoring and alerting.</p>
                             </div><!--//item-->
 
-
-                                   
                             <div class="item">
-                                <h3 class="title">.Net Developer - <span class="place"><a href="http://innovexcell.pk/" target="_blank" class="company-title">InnovExcell Pvt Ltd</a></span> <span class="year">(June 2018 - February 2019)</span></h3>
-                                <p>I began my career at InnovExcell, focusing on maintaining and troubleshooting their existing web portals. I contributed to a web-based Sanitary Store Management System built in ASP.NET MVC, gathering system requirements, designing, developing the UI, and programming core functionalities. My work primarily centered on the Vendors and Stock modules, creating an intuitive point-of-sale solution that enabled sanitary stores to efficiently track inventory and vendor details. This role provided a solid foundation in ASP.NET MVC and effective UI design for practical business applications.</p>
+                                <h3 class="title">.NET Developer - <span class="place"><a href="http://innovexcell.pk/" target="_blank">InnovExcell Pvt Ltd</a></span> <span class="year">(June 2018 - February 2019)</span></h3>
+                                <p>Started my career developing web-based solutions using <code>ASP.NET MVC</code>. Built a comprehensive <strong>Sanitary Store Management System</strong> with focus on the Vendors and Stock modules. Created intuitive <span class="text-highlight">point-of-sale solutions</span> that enabled efficient inventory tracking and vendor management.</p>
                             </div><!--//item-->
                             
                             
@@ -129,8 +120,8 @@
                         <h2 class="heading">Contact</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">mazdaqshahzad@gmail.com</a></li>
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Islamabad, PK</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:mazdaqshahzad@gmail.com">mazdaqshahzad@gmail.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Islamabad, Pakistan</li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -140,31 +131,31 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Tech Stack</h2>
                         <div class="content">
-                            <p class="intro">
-                            
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">.Net | .NET CORE | MVC | REST API
-                                    </h3>
+                                    <h3 class="level-title">.NET | .NET Core | Web APIs</h3>
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">C# | Javascript | Python
-                                    </h3>
+                                    <h3 class="level-title">C# | JavaScript | TypeScript</h3>
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Angular | Bootstrap | Jquery
-                                    </h3>
+                                    <h3 class="level-title">Angular | React | Vue.js</h3>
                                 </div><!--//item-->
 
-                                
                                 <div class="item">
-                                <h3 class="level-title">MySQL | SQL Server | PostgreSQL
+                                    <h3 class="level-title">Node.js | Express | Python</h3>
+                                </div><!--//item-->
 
-                                </h3>
-                            </div><!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">SQL Server | PostgreSQL | MongoDB</h3>
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Docker | Kubernetes | Azure</h3>
+                                </div><!--//item-->
                                 
                             </div>              
                         </div><!--//content-->  
@@ -175,40 +166,31 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Development Practices</h2>
                         <div class="content">
-                            <p class="intro">
-                            
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Code Reviews
-                                    </h3>
+                                    <h3 class="level-title">Agile/Scrum Methodologies</h3>
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Debugging
-                                    </h3>
+                                    <h3 class="level-title">Test-Driven Development</h3>
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Maintenance
-                                    </h3>
+                                    <h3 class="level-title">Code Reviews & Quality Assurance</h3>
                                 </div><!--//item-->
 
-                                
                                 <div class="item">
-                                <h3 class="level-title">Production Support
-                                </h3>
-                            </div><!--//item-->
+                                    <h3 class="level-title">CI/CD & DevOps Practices</h3>
+                                </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">Release Support
-                                </h3>
-                            </div><!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">Production Support & Monitoring</h3>
+                                </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">Scrum
-                                </h3>
-                            </div><!--//item-->
+                                <div class="item">
+                                    <h3 class="level-title">Performance Optimization</h3>
+                                </div><!--//item-->
                                 
                             </div>              
                         </div><!--//content-->  
