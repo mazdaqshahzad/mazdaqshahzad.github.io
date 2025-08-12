@@ -64,7 +64,7 @@
                                     <i class="fas fa-envelope"></i>
                                     <span class="sr-only">Email:</span>
                                     <a href="mailto:mazdaqshahzad@gmail.com">mazdaqshahzad@gmail.com</a>
-                                    <button class="copy-btn" onclick="copyEmail()" title="Copy email address">
+                                    <button class="copy-btn" onclick="copyEmail(this)" title="Copy email address">
                                         <i class="fas fa-copy"></i>
                                     </button>
                                 </li>
@@ -136,7 +136,7 @@
                                     <i class="fas fa-envelope"></i>
                                     <span class="sr-only">Email:</span>
                                     <a href="mailto:mazdaqshahzad@gmail.com">mazdaqshahzad@gmail.com</a>
-                                    <button class="copy-btn" onclick="copyEmail()" title="Copy email address">
+                                    <button class="copy-btn" onclick="copyEmail(this)" title="Copy email address">
                                         <i class="fas fa-copy"></i>
                                     </button>
                                 </li>
@@ -257,9 +257,9 @@
     
     <!-- Copy email functionality -->
     <script>
-        function copyEmail() {
+        function copyEmail(button) {
             const email = 'mazdaqshahzad@gmail.com';
-            const copyBtn = document.querySelector('.copy-btn');
+            const copyBtn = button || event.target;
             
             navigator.clipboard.writeText(email).then(function() {
                 // Show success feedback
