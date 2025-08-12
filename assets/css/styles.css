@@ -485,6 +485,43 @@ a:focus {
   color: var(--terminal-green);
 }
 
+/* Copy button styling */
+.copy-btn {
+  background: var(--bg-primary);
+  border: 2px solid var(--text-accent);
+  color: var(--text-accent);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 32px;
+}
+
+.copy-btn:hover {
+  background: var(--text-accent);
+  color: var(--bg-primary);
+  border-color: var(--text-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+}
+
+.copy-btn:active {
+  transform: translateY(0);
+}
+
+.copy-btn.copied {
+  background: var(--terminal-green);
+  color: var(--bg-primary);
+  border-color: var(--terminal-green);
+  box-shadow: 0 4px 12px rgba(0, 255, 65, 0.3);
+}
+
 /* Education Section */
 .education .item {
   padding: var(--padding-md);
