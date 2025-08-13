@@ -467,20 +467,6 @@ a:focus {
   box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
 }
 
-/* Special styling for AI/LLM tags */
-.skills .skill-tag.ai-tag {
-  background: linear-gradient(135deg, var(--terminal-green), #00d4aa);
-  color: var(--bg-primary);
-  border-color: var(--terminal-green);
-  font-weight: 600;
-}
-
-.skills .skill-tag.ai-tag:hover {
-  background: linear-gradient(135deg, #00ff41, var(--terminal-green));
-  box-shadow: 0 4px 12px rgba(0, 255, 65, 0.4);
-  transform: translateY(-2px) scale(1.05);
-}
-
 /* Development Practices Section - Different Design */
 .practices .practices-list {
   display: grid;
