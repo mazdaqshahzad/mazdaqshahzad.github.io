@@ -414,33 +414,71 @@ a:focus {
   line-height: 1.6;
 }
 
-/* Skills/Tech Stack Sections */
-.skills .skillset .item {
+/* Skills/Tech Stack Sections - New Tag-based Design */
+.skills .skill-category {
+  margin-bottom: var(--padding-lg);
+}
+
+.skills .skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skills .category-title {
+  color: var(--text-accent);
+  font-size: 1rem;
+  font-weight: 600;
   margin-bottom: var(--padding-sm);
-  padding: var(--padding-xs);
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border-primary);
-  border-radius: var(--radius-sm);
-  transition: all 0.3s ease;
-}
-
-.skills .skillset .item:hover {
-  border-color: var(--text-accent);
-  background: rgba(88, 166, 255, 0.1);
-}
-
-.skills .skillset .item .level-title {
-  color: var(--text-primary);
-  font-size: 0.95rem;
-  margin: 0;
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.skills .skillset .item .level-title::before {
-  content: '◆ ';
+.skills .category-title::before {
+  content: '▸ ';
   color: var(--terminal-green);
   margin-right: var(--padding-xs);
+}
+
+.skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding-xs);
+}
+
+.skills .skill-tag {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  border: 1px solid var(--border-primary);
+  transition: all 0.3s ease;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.skills .skill-tag:hover {
+  background: var(--text-accent);
+  color: var(--bg-primary);
+  border-color: var(--text-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
+}
+
+/* Special styling for AI/LLM tags */
+.skills .skill-tag.ai-tag {
+  background: linear-gradient(135deg, var(--terminal-green), #00d4aa);
+  color: var(--bg-primary);
+  border-color: var(--terminal-green);
+  font-weight: 600;
+}
+
+.skills .skill-tag.ai-tag:hover {
+  background: linear-gradient(135deg, #00ff41, var(--terminal-green));
+  box-shadow: 0 4px 12px rgba(0, 255, 65, 0.4);
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Contact Section */
