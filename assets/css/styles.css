@@ -95,7 +95,7 @@ h3::before {
 
 /* About Me Subheadings */
 .about-subheading {
-  color: var(--accent-color) !important;
+  color: var(--text-accent) !important;
   font-family: 'JetBrains Mono', monospace;
   font-size: 1.1rem;
   font-weight: 600;
